@@ -1,0 +1,96 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #021526;
+}
+
+.container{
+    min-height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container img {
+    width: 150px; 
+    height: auto;
+    max-height: 220px;
+    transition: transform 0.3s ease;
+    filter: brightness(0) sepia(1); 
+}
+.container img:hover {
+    transform: scale(1.2);
+    filter: brightness(1) sepia(0);
+}
+
+.container img:hover + img {
+    transform: scale(1.1);
+    filter: brightness(1) sepia(0);
+}
+.container img:hover + img + img {
+    transform: scale(1);
+    filter: brightness(1) sepia(0);
+}
+/*.muestreo img:first-child:hover + img:last-child{
+    transform: scale(1.2);
+}
+.muestreo img:last-child:hover + img:first-child{
+    transform: scale(1.2);
+}
+.muestreo img:hover{
+    filter: brightness(1) sepia(0);
+}*/
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+
+/*
+
+.container img:hover + img {
+    transform: scale(0.8);
+}
+.container img:hover + img + img {
+    transform: scale(0.7);
+}
+
+/*
+
+.container img:hover img:first-child {
+    transform: scale(0.8);
+}
+
+.imagen2:hover + .imagen1{ 
+    transform: scale(0.8);
+}*/
+
+
+
+
+/*.container img:hover ~ img {
+    transform: scale(0.8);
+}*/
+
+/*.animation{
+    transition: scale(1.4);
+}
+.animation:hover + .animation{
+    transition: scale(1.3);
+}
+.animation:hover + .animation + .animation{
+    transition: scale(1.2);
+}*/
+
+
